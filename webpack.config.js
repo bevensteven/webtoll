@@ -25,4 +25,8 @@ module.exports = {
             { test: /\.css$/, use: ['style-loader', 'css-loader'] }
         ]
     },
+    externals: {
+        'grpc': '{}',
+        '../generated/xrp_ledger_grpc_pb': '{}',
+    }
 };
