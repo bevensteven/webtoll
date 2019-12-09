@@ -4,13 +4,15 @@
   "description": "Tax yourself by sending XRP to a website of your choice when you're on the web.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx webpack"
   },
   "keywords": [],
   "author": "",
   "license": "BSD-3-Clause",
   "devDependencies": {
     "@types/chrome": "0.0.75",
+    "@types/node": "^12.12.14",
     "@types/react": "^16.7.8",
     "@types/react-dom": "^16.0.11",
     "css-loader": "^1.0.1",
