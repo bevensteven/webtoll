@@ -1,7 +1,7 @@
 import * as xpring from "@xpring-eng/xpring-web"
 import 'chrome-extension-async'
 
-const DEFAULT_AMOUNT = BigInt(2)
+const DEFAULT_AMOUNT = BigInt(2000000)
 
 // build xpringClient
 const grpcUrl = 'http://grpc.xpring.tech:8080'
