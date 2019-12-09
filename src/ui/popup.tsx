@@ -1,7 +1,8 @@
 import * as React from "react"
 import * as ReactDOM from "react-dom"
 
-import ValueInput from "./ValueInput"
+import ValueInput from "./valueInput"
+import CreateWallet from "./createWallet"
 import "../styles/popup.css"
 
 class Extension extends React.Component {
@@ -11,7 +12,7 @@ class Extension extends React.Component {
                 <h1>{ chrome.i18n.getMessage("l10nHello") }</h1>
                 <ValueInput inputName="url" />
                 <ValueInput inputName="target_wallet" />
-                <ValueInput inputName="user_wallet" />
+                <CreateWallet />
             </div>
         )
     }
