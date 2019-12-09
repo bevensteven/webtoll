@@ -10,7 +10,7 @@ class Extension extends React.Component {
             <div className="popup-padded">
                 <h1>{ chrome.i18n.getMessage("l10nHello") }</h1>
                 {/* Form input to add URLs */}
-                <UrlInput/>
+                <ValueInput inputName="url" />
             </div>
         )
     }

@@ -1,8 +1,20 @@
-class UrlInput extends React.Component {
-    state: any;
+interface ValueInputProps {
+    inputName: string
+}
+
+interface ValueInputState {
+    value: string
+}
+
+class ValueInput extends React.Component<ValueInputProps, ValueInputState> {
+    inputName: string;
+
     constructor(props: any) {
         super(props)
-        this.state = {value: ''}
+        this.inputName = props.inputName
+        this.state = {
+            value: ''
+        }
 
         // bind functions
         this.updateStorage = this.updateStorage.bind(this)
@@ -15,12 +27,15 @@ class UrlInput extends React.Component {
      * 
      * TODO: add support for adding and storing multiple URLs.
      */
-    updateStorage(url: string) {
+    updateStorage(value: string) {
         // validate string
         // add string to storage
-        chrome.storage.sync.set({'value': url}, function() {
+        let data = {
+            inputName: value
+        }
+        chrome.storage.sync.set(data, function() {
                 // Notify that the URL has been saved
-                chrome.runtime.sendMessage(`${url} has been saved to webtoll`)
+                chrome.runtime.sendMessage(`${data} has been saved to webtoll`)
         })
         // handle error
     }
