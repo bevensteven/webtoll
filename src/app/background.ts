@@ -7,19 +7,7 @@ const DEFAULT_AMOUNT = BigInt(2)
 const grpcUrl = 'http://grpc.xpring.tech:8080'
 const xpringClient = new xpring.XpringClient(grpcUrl)
 
-chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
-    console.log("Background got a message!")
-    sendResponse({})
-})
-
-// chrome.webNavigation.onCompleted.addListener((details) => {
-//     console.log("Background: webNavigation.onCompleted event fired")
-//     let url = details.url
-//     handleWebNavCompleted(url, sendXrp)
-// })
-
 chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
-    console.log('Tab updated, changeInfo: ', changeInfo)
     var url = changeInfo.url
     handleWebNavCompleted(url, sendXrp)
 })
@@ -31,7 +19,6 @@ chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
 function handleWebNavCompleted(url: string, callback) {
     // lookup stored url
     chrome.storage.sync.get(['url'], function(storedItems) {
-        console.log('Found storage object: ', storedItems)
         let storedUrl = storedItems.url
         if (url == storedUrl) {
             console.log(`${url} is stored!`)
@@ -56,22 +43,25 @@ async function sendXrp() {
         userWallet['privateKey']
     )
 
-    // // validate target addr
-    // if (xpring.Utils.isValidXAddress(targetWalletAddr)) {
-    //     // do nothing
-    // } else if (xpring.Utils.isValidClassicAddress(targetWalletAddr)) {
-    //     // convert 
-    //     targetWalletAddr = xpring.Utils.encodeXAddress(targetWalletAddr, 0)
-    // } else {
-    //     throw new Error('invalid address format. must be classic or x-address')
-    // }
-
     // send xrp
-    console.log(`${DEFAULT_AMOUNT} XRP: ${senderWallet.getAddress()} => ${targetWalletAddr}`)
+    console.log('### BEFORE ###')
+    await checkBalances(senderWallet.getAddress(), targetWalletAddr)
+    console.log(`Sending ${DEFAULT_AMOUNT} XRP, ${senderWallet.getAddress()} => ${targetWalletAddr}`)
+
     const transactionHash = await xpringClient.send(
         DEFAULT_AMOUNT,
         targetWalletAddr,
         senderWallet
     )
+
     console.log('Transaction hash: ', transactionHash)
+    console.log('### AFTER ###')
+    await checkBalances(senderWallet.getAddress(), targetWalletAddr)
+}
+
+async function checkBalances(senderAddr, receiverAddr) {
+    let senderBalance = await xpringClient.getBalance(senderAddr)
+    let receiverBalance = await xpringClient.getBalance(receiverAddr)
+    console.log(`Sender ${senderAddr} has ${senderBalance} XRP`)
+    console.log(`Receiver ${receiverAddr} has ${receiverBalance} XRP`)
 }
