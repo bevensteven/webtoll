@@ -1,3 +1,5 @@
+import * as React from "react"
+
 interface ValueInputProps {
     inputName: string
 }
@@ -54,7 +56,7 @@ class ValueInput extends React.Component<ValueInputProps, ValueInputState> {
         return (
             <form onSubmit={this.handleSubmit}>
                 <label>
-                    URL:
+                    {this.inputName}:
                     <input type="text" value={this.state.value} onChange={this.handleChange} />
                 </label>
                 <input type="submit" value="Submit" />
@@ -62,3 +64,5 @@ class ValueInput extends React.Component<ValueInputProps, ValueInputState> {
         );
     }
 }
+
+export default ValueInput
