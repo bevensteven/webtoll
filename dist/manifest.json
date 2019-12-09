@@ -4,9 +4,7 @@
     "manifest_version": 2,
     "description": "Send XRP to a website of your choice when you do certain things on the internet.",
     "icons": {
-      "16": "icons/icon16.png",
-      "48": "icons/icon48.png",
-      "128": "icons/icon128.png"
+      "128": "icons/toll-road.png"
     },
     "browser_action": {
       "default_title": "webtoll",
