@@ -15,11 +15,14 @@ class CreateWallet extends React.Component {
         console.log(newWallet.getPrivateKey())
 
         let data = {
-            wallet: newWallet
+            wallet: {
+                publicKey: newWallet.getPublicKey,
+                privateKey: newWallet.getPrivateKey
+            }
         }
         chrome.storage.sync.set(data, function() {
             // Notify that the addr has been saved
-            chrome.runtime.sendMessage(`${data} has been saved to webtoll`)
+            chrome.runtime.sendMessage('Created wallet and saved data to webtool: ', data)
         })
     }
 
