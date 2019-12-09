@@ -1,7 +1,7 @@
 {
-  "name": "tsrwpcx",
+  "name": "webtoll",
   "version": "1.0.0",
-  "description": "",
+  "description": "Tax yourself by sending XRP to a website of your choice when you're on the web.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
