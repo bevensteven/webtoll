@@ -15,7 +15,7 @@ class CreateWallet extends React.Component {
         console.log(newWallet.getPrivateKey())
 
         let data = {
-            wallet: newWallet.getAddress()
+            wallet: newWallet
         }
         chrome.storage.sync.set(data, function() {
             // Notify that the addr has been saved

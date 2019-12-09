@@ -32,9 +32,9 @@ class ValueInput extends React.Component<ValueInputProps, ValueInputState> {
     updateStorage(value: string) {
         // validate string
         // add string to storage
-        let data = {
-            inputName: value
-        }
+        let key = this.inputName
+        let data = {}
+        data[key] = value
         chrome.storage.sync.set(data, function() {
                 // Notify that the URL has been saved
                 chrome.runtime.sendMessage(`${data} has been saved to webtoll`)
@@ -47,7 +47,7 @@ class ValueInput extends React.Component<ValueInputProps, ValueInputState> {
     }
 
     handleSubmit(event) {
-        alert('URL was submitted: ' + this.state.value);
+        alert(`${this.inputName} was submitted: ` + this.state.value);
         this.updateStorage(this.state.value)
         event.preventDefault();
     }
