@@ -48,7 +48,7 @@ class CreateWallet extends React.Component {
 
     render() {
         return (
-            <button onClick={this.handleClick}>
+            <button id="create_wallet" onClick={this.handleClick}>
                 Create wallet
             </button>
         )

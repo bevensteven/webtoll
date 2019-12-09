@@ -55,11 +55,13 @@ class ValueInput extends React.Component<ValueInputProps, ValueInputState> {
     render() {
         return (
             <form onSubmit={this.handleSubmit}>
-                <label>
-                    {this.inputName}:
-                    <input type="text" value={this.state.value} onChange={this.handleChange} />
+                <label >
+                    {this.inputName.toUpperCase()[0] + this.inputName.replace('_', ' ').slice(1)}:
                 </label>
-                <input type="submit" value="Submit" />
+                <input type="text" value={this.state.value} onChange={this.handleChange} className='yolo'/>
+                <div className='button'>
+                    <input type="submit" value="Submit" />
+                </div>
             </form>
         );
     }

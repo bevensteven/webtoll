@@ -1,6 +1,7 @@
 body {
     min-width: 200px;
     min-height: 200px;
+    font-family: sans-serif;
 }
 
 .popup-padded {
@@ -8,4 +9,51 @@ body {
     padding-bottom: 10px;
     padding-left: 10px;
     padding-right: 10px;
+}
+
+label {
+    width: 50%;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+.yolo {
+    width: 50%;
+    display: inline-block;
+}
+
+button, input[type="submit"] {
+    border-radius: 5px;
+    border-width: 1px;
+    height: 24px;
+    background-color: #0A93EB;
+    color: white;
+    padding: 4px 16px;
+    transition: all 0.3s ease-out;
+    -webkit-box-shadow: 0px 10px 11px -7px rgba(0,0,0,0.17); 
+    box-shadow: 0px 10px 11px -7px rgba(0,0,0,0.17);
+}
+
+button:hover, input[type="submit"]:hover {
+    background-color: #0F72E5;
+}
+
+#create_wallet {
+    background-color: #2BCB96; 
+    -webkit-box-shadow: 0px 10px 11px -7px rgba(0,0,0,0.17); 
+    box-shadow: 0px 10px 11px -7px rgba(0,0,0,0.17);
+}
+
+#create_wallet:hover {
+    background-color: #219A72;
+}
+
+.button {
+    margin-top: 12px;
+}
+
+form {
+    margin: 24px 0px;
 }
