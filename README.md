@@ -1,3 +1,5 @@
+<a href="https://www.producthunt.com/posts/webtoll?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-webtoll" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=177466&theme=light" alt="webtoll - Digitally tax yourself on the internet 🙃 | Product Hunt Embed" style="width: 250px; height: 54px;" width="250px" height="54px" /></a>
+
 # webtoll ✋💸
 
 This is a Google Chrome extension built off of Duo Lab's `chrome-extension-boilerplate` [here](https://github.com/duo-labs/chrome-extension-boilerplate). It also utilizes Xpring's [`xpring-js` client library](https://github.com/xpring-eng/Xpring-JS/). Please note that this is a prototype and requires extensive work to turn it into a consumer ready extension. See the *Contributing* section for how we can get there.
