@@ -1,4 +1,6 @@
 <a href="https://www.producthunt.com/posts/webtoll?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-webtoll" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=177466&theme=light" alt="webtoll - Digitally tax yourself on the internet 🙃 | Product Hunt Embed" style="width: 250px; height: 54px;" width="250px" height="54px" /></a>
+[![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=bevensteven/webtoll)](https://dependabot.com)
+
 
 # webtoll ✋💸
 
