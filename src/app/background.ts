@@ -21,7 +21,7 @@ function handleWebNavCompleted(url: string, callback) {
     chrome.storage.sync.get(['url'], function(storedItems) {
         let storedUrl = storedItems.url
         if (url == storedUrl) {
-            console.log(`${url} is stored!`)
+            console.log(`Paying taxes 💸 on ${url}`)
             callback()
         }
     })
@@ -46,7 +46,7 @@ async function sendXrp() {
     // send xrp
     console.log('### BEFORE ###')
     await checkBalances(senderWallet.getAddress(), targetWalletAddr)
-    console.log(`Sending ${DEFAULT_AMOUNT} XRP, ${senderWallet.getAddress()} => ${targetWalletAddr}`)
+    console.log(`Sending ${DEFAULT_AMOUNT} drops, ${senderWallet.getAddress()} => ${targetWalletAddr}`)
 
     const transactionHash = await xpringClient.send(
         DEFAULT_AMOUNT,
