@@ -21,10 +21,9 @@ const xpring = require('xpring-js')
 async function run() {
   const seed = await seedFromFaucet()
   const newWallet = xpring.Wallet.generateWalletFromSeed(seed)
-          
+  
+  console.log(`XRP wallet address for ${process.argv[2]} is:`)
   console.log(newWallet.getAddress())
-  console.log(newWallet.getPublicKey())
-  console.log(newWallet.getPrivateKey())
 }
 
 run()
