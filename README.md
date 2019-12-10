@@ -2,7 +2,7 @@
 
 This is a Google Chrome extension built off of Duo Lab's `chrome-extension-boilerplate` [here](https://github.com/duo-labs/chrome-extension-boilerplate). It also utilizes Xpring's [`xpring-js` client library](https://github.com/xpring-eng/Xpring-JS/). Please note that this is a prototype and requires extensive work to turn it into a consumer ready extension. See the *Contributing* section for how we can get there.
 
-![Toll](https://github.com/bevensteven/webtoll/dist/icons/toll-road.png)
+![](https://media.giphy.com/media/3ov9jNziFTMfzSumAw/giphy.gif)
 
 See slide deck for this project [here](https://docs.google.com/presentation/d/1jYo8RV8hFho-oK-p2wL3qJ-ZDgc9yJj6VOyEisS5hEY/edit?usp=sharing). In these slides, you can learn more about `webtoll`'s concept, inspiration, and potential future roadmap.
 
