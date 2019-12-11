@@ -1485,11 +1485,6 @@ global-prefix@^3.0.0:
     kind-of "^6.0.2"
     which "^1.3.1"
 
-google-protobuf@3.10.0:
-  version "3.10.0"
-  resolved "https://registry.yarnpkg.com/google-protobuf/-/google-protobuf-3.10.0.tgz#f36171128090615049f9b0e42252b1a10a4bc534"
-  integrity sha512-d0cMO8TJ6xtB/WrVHCv5U81L2ulX+aCD58IljyAN6mHwdHHJ2jbcauX5glvivi3s3hx7EYEo7eUA9WftzamMnw==
-
 google-protobuf@3.11.1:
   version "3.11.1"
   resolved "https://registry.yarnpkg.com/google-protobuf/-/google-protobuf-3.11.1.tgz#c1319e5fc8579394758c8a41699f0a2e3e950c38"
@@ -3592,25 +3587,25 @@ x-address-codec@^0.7.0:
   dependencies:
     base-x "^1.0.1"
 
-xpring-common-js@1.1.7:
-  version "1.1.7"
-  resolved "https://registry.yarnpkg.com/xpring-common-js/-/xpring-common-js-1.1.7.tgz#2c6302a849664e461aeffa396f94ca4965d03df1"
-  integrity sha512-zqXdiPXgexSpwdeS+Pl+SMMJfSCYsKGJTDLQs9TSw1ZzS07yoBRackQCDQCcuLs94b2jGtk32j+WkuONNX6YhQ==
+xpring-common-js@1.1.12:
+  version "1.1.12"
+  resolved "https://registry.yarnpkg.com/xpring-common-js/-/xpring-common-js-1.1.12.tgz#0b53ac17947f11abefb378cb06261b8265d0514a"
+  integrity sha512-4cRMD594yaI1JO2qIpGaTaNWhMNhcir2wV1Xz0PBNmAGBhRknkNg50SaFdguJvvzmUOyzjrVTnfOVpkoNxAwlQ==
   dependencies:
     bip32 "2.0.4"
     bip39 "^3.0.2"
-    google-protobuf "3.10.0"
+    google-protobuf "3.11.1"
     grpc "1.24.2"
     ripple-address-codec "4.0.0"
     ripple-binary-codec "0.2.4"
     ripple-keypairs "^0.11.0"
 
-xpring-js@1.1.2:
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/xpring-js/-/xpring-js-1.1.2.tgz#191be1593ac63ee960014cb9165bdfc635de433f"
-  integrity sha512-UpRwoEeXj/W0dmZRjm7C3zkNCAr1z+dx6PH7YZMBiNciAcLxML+ERgSIJRRXMGVa7TZ+y+DD/EAZGB107tJd2A==
+xpring-js@1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/xpring-js/-/xpring-js-1.2.0.tgz#2b61556a4c567213c439b79afffe7c0fe001e6d8"
+  integrity sha512-iYxFMOdlYiICDn/4Ab6hVwX4GVFjv9E2n45DXZPHa1wAJy6mc1+W+kSU7dWuVLZWBLyv38K6azkxrZV8n0GdKw==
   dependencies:
-    xpring-common-js "1.1.7"
+    xpring-common-js "1.1.12"
 
 xtend@^4.0.0, xtend@~4.0.1:
   version "4.0.2"
