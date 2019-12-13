@@ -17,10 +17,10 @@
     "@types/long" "*"
     "@types/node" "*"
 
-"@types/chrome@0.0.91":
-  version "0.0.91"
-  resolved "https://registry.yarnpkg.com/@types/chrome/-/chrome-0.0.91.tgz#4b3996f55f344057e6a677c8366aa98080c6e380"
-  integrity sha512-vNvo9lJkp1AvViWrUwe1bxhoMwr5dRZWlgr1DTuaNkz97LsG56lDX1sceWeZir2gRACJ5vdHtoRdVAvm8C75Ug==
+"@types/chrome@0.0.75":
+  version "0.0.75"
+  resolved "https://registry.yarnpkg.com/@types/chrome/-/chrome-0.0.75.tgz#11cb716cdaa13fc15c47bfcc11da325f375f23d1"
+  integrity sha512-wfy/8egkLkznDD8zcimbqJBvBoJrmSr0mcptnnVdi5MbzKidlLr7DiRoYVPHIGKdMVlv1kaGIQ8l+RD3moy89A==
   dependencies:
     "@types/filesystem" "*"
 
@@ -942,10 +942,10 @@ crypto-browserify@^3.11.0:
     randombytes "^2.0.0"
     randomfill "^1.0.3"
 
-css-loader@^3.3.0:
-  version "3.3.0"
-  resolved "https://registry.yarnpkg.com/css-loader/-/css-loader-3.3.0.tgz#65f889807baec3197313965d6cda9899f936734d"
-  integrity sha512-x9Y1vvHe5RR+4tzwFdWExPueK00uqFTCw7mZy+9aE/X1SKWOArm5luaOrtJ4d05IpOwJ6S86b/tVcIdhw1Bu4A==
+css-loader@^3.3.2:
+  version "3.3.2"
+  resolved "https://registry.yarnpkg.com/css-loader/-/css-loader-3.3.2.tgz#41b2086528aa4fbf8c0692e874bc14f081129b21"
+  integrity sha512-4XSiURS+YEK2fQhmSaM1onnUm0VKWNf6WWBYjkp9YbSDGCBTVZ5XOM6Gkxo8tLgQlzkZOBJvk9trHlDk4gjEYg==
   dependencies:
     camelcase "^5.3.1"
     cssesc "^3.0.0"
