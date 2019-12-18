@@ -17,10 +17,10 @@
     "@types/long" "*"
     "@types/node" "*"
 
-"@types/chrome@0.0.91":
-  version "0.0.91"
-  resolved "https://registry.yarnpkg.com/@types/chrome/-/chrome-0.0.91.tgz#4b3996f55f344057e6a677c8366aa98080c6e380"
-  integrity sha512-vNvo9lJkp1AvViWrUwe1bxhoMwr5dRZWlgr1DTuaNkz97LsG56lDX1sceWeZir2gRACJ5vdHtoRdVAvm8C75Ug==
+"@types/chrome@0.0.75":
+  version "0.0.75"
+  resolved "https://registry.yarnpkg.com/@types/chrome/-/chrome-0.0.75.tgz#11cb716cdaa13fc15c47bfcc11da325f375f23d1"
+  integrity sha512-wfy/8egkLkznDD8zcimbqJBvBoJrmSr0mcptnnVdi5MbzKidlLr7DiRoYVPHIGKdMVlv1kaGIQ8l+RD3moy89A==
   dependencies:
     "@types/filesystem" "*"
 
@@ -35,6 +35,11 @@
   version "0.0.28"
   resolved "https://registry.yarnpkg.com/@types/filewriter/-/filewriter-0.0.28.tgz#c054e8af4d9dd75db4e63abc76f885168714d4b3"
   integrity sha1-wFTor02d11205jq8dviFFocU1LM=
+
+"@types/google-protobuf@^3.7.2":
+  version "3.7.2"
+  resolved "https://registry.yarnpkg.com/@types/google-protobuf/-/google-protobuf-3.7.2.tgz#cd8a360c193ce4d672575a20a79f49ba036d38d2"
+  integrity sha512-ifFemzjNchFBCtHS6bZNhSZCBu7tbtOe0e8qY0z2J4HtFXmPJjm6fXSaQsTG7yhShBEZtt2oP/bkwu5k+emlkQ==
 
 "@types/long@*":
   version "4.0.0"
@@ -1460,6 +1465,11 @@ google-protobuf@3.11.1:
   resolved "https://registry.yarnpkg.com/google-protobuf/-/google-protobuf-3.11.1.tgz#c1319e5fc8579394758c8a41699f0a2e3e950c38"
   integrity sha512-1fdyssLSa7Dip+MDdluLl0uK+2rspgU1PrbdPJKt7hywqSl3+R27TkLYKuBn9dvOyr0VQ0cliQWlfMheW5WKqA==
 
+google-protobuf@3.11.2:
+  version "3.11.2"
+  resolved "https://registry.yarnpkg.com/google-protobuf/-/google-protobuf-3.11.2.tgz#43272974521a5cec35a21f62730cf517a5a8e38c"
+  integrity sha512-T4fin7lcYLUPj2ChUZ4DvfuuHtg3xi1621qeRZt2J7SvOQusOzq+sDT4vbotWTCjUXJoR36CA016LlhtPy80uQ==
+
 graceful-fs@^4.1.11, graceful-fs@^4.1.15, graceful-fs@^4.1.2:
   version "4.2.3"
   resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.2.3.tgz#4a12ff1b60376ef09862c2093edd908328be8423"
@@ -1470,7 +1480,7 @@ grpc-web@^1.0.7:
   resolved "https://registry.yarnpkg.com/grpc-web/-/grpc-web-1.0.7.tgz#9e4fbcf63d3734515332ab59e42baa7d0d290015"
   integrity sha512-Fkbz1nyvvt6GC6ODcxh9Fen6LLB3OTCgGHzHwM2Eni44SUhzqPz1UQgFp9sfBEfInOhx3yBdwo9ZLjZAmJ+TtA==
 
-grpc@1.24.2:
+grpc@1.24.2, grpc@^1.24.2:
   version "1.24.2"
   resolved "https://registry.yarnpkg.com/grpc/-/grpc-1.24.2.tgz#76d047bfa7b05b607cbbe3abb99065dcefe0c099"
   integrity sha512-EG3WH6AWMVvAiV15d+lr+K77HJ/KV/3FvMpjKjulXHbTwgDZkhkcWbwhxFAoTdxTkQvy0WFcO3Nog50QBbHZWw==
@@ -2849,6 +2859,19 @@ ripple-binary-codec@0.2.4:
     lodash "^4.17.15"
     ripple-address-codec "^3.0.4"
 
+ripple-binary-codec@0.2.5:
+  version "0.2.5"
+  resolved "https://registry.yarnpkg.com/ripple-binary-codec/-/ripple-binary-codec-0.2.5.tgz#4d5b0cf8f68c9dd44c9350b2ff1616e60ee63fe8"
+  integrity sha512-wCXrdANutgSTzsYFUfifmNYu6j03+1aZhyVXoQr8tKYujqvbLBseJp8ltZwrXGEa43aqQqPn4DBxdQWjEGX0Bg==
+  dependencies:
+    babel-runtime "^6.6.1"
+    bn.js "^4.11.3"
+    create-hash "^1.1.2"
+    decimal.js "^5.0.8"
+    inherits "^2.0.1"
+    lodash "^4.17.15"
+    ripple-address-codec "^3.0.4"
+
 ripple-keypairs@^0.11.0:
   version "0.11.0"
   resolved "https://registry.yarnpkg.com/ripple-keypairs/-/ripple-keypairs-0.11.0.tgz#ee9f4172d615106f4d3c0af15805960742dab045"
@@ -3563,25 +3586,26 @@ x-address-codec@^0.7.0:
   dependencies:
     base-x "^1.0.1"
 
-xpring-common-js@1.1.12:
-  version "1.1.12"
-  resolved "https://registry.yarnpkg.com/xpring-common-js/-/xpring-common-js-1.1.12.tgz#0b53ac17947f11abefb378cb06261b8265d0514a"
-  integrity sha512-4cRMD594yaI1JO2qIpGaTaNWhMNhcir2wV1Xz0PBNmAGBhRknkNg50SaFdguJvvzmUOyzjrVTnfOVpkoNxAwlQ==
+xpring-common-js@1.1.15:
+  version "1.1.15"
+  resolved "https://registry.yarnpkg.com/xpring-common-js/-/xpring-common-js-1.1.15.tgz#dd725a5528efca9b7e5cc017e045cc3c2115d62d"
+  integrity sha512-MyUUF8hq1WXWJFNwnUmPbHH4PRybvt7lYSd3sF82zY/wdQ6zx6/bm97lT/Kymk54ZW2SkBCeIoPa0RDcOb8+7Q==
   dependencies:
+    "@types/google-protobuf" "^3.7.2"
     bip32 "2.0.4"
     bip39 "^3.0.2"
-    google-protobuf "3.11.1"
-    grpc "1.24.2"
+    google-protobuf "3.11.2"
     ripple-address-codec "4.0.0"
-    ripple-binary-codec "0.2.4"
+    ripple-binary-codec "0.2.5"
     ripple-keypairs "^0.11.0"
 
-xpring-js@1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/xpring-js/-/xpring-js-1.2.0.tgz#2b61556a4c567213c439b79afffe7c0fe001e6d8"
-  integrity sha512-iYxFMOdlYiICDn/4Ab6hVwX4GVFjv9E2n45DXZPHa1wAJy6mc1+W+kSU7dWuVLZWBLyv38K6azkxrZV8n0GdKw==
+xpring-js@1.2.5:
+  version "1.2.5"
+  resolved "https://registry.yarnpkg.com/xpring-js/-/xpring-js-1.2.5.tgz#c3e00db58299e1719a1cfef2e4af0584b68e67aa"
+  integrity sha512-yc1ovKjP4Xz8f7q0/0/Lcb6vthDLp2sPQJtncbcoAoT7or8Fl+cCm+IUkwwxSFPg6nye6elWOtQI5tiM8JWEUA==
   dependencies:
-    xpring-common-js "1.1.12"
+    grpc "^1.24.2"
+    xpring-common-js "1.1.15"
 
 xtend@^4.0.0, xtend@~4.0.1:
   version "4.0.2"
