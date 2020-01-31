@@ -17,10 +17,10 @@
     "@types/long" "*"
     "@types/node" "*"
 
-"@types/chrome@0.0.91":
-  version "0.0.91"
-  resolved "https://registry.yarnpkg.com/@types/chrome/-/chrome-0.0.91.tgz#4b3996f55f344057e6a677c8366aa98080c6e380"
-  integrity sha512-vNvo9lJkp1AvViWrUwe1bxhoMwr5dRZWlgr1DTuaNkz97LsG56lDX1sceWeZir2gRACJ5vdHtoRdVAvm8C75Ug==
+"@types/chrome@0.0.75":
+  version "0.0.75"
+  resolved "https://registry.yarnpkg.com/@types/chrome/-/chrome-0.0.75.tgz#11cb716cdaa13fc15c47bfcc11da325f375f23d1"
+  integrity sha512-wfy/8egkLkznDD8zcimbqJBvBoJrmSr0mcptnnVdi5MbzKidlLr7DiRoYVPHIGKdMVlv1kaGIQ8l+RD3moy89A==
   dependencies:
     "@types/filesystem" "*"
 
@@ -415,7 +415,7 @@ balanced-match@^1.0.0:
   resolved "https://registry.yarnpkg.com/balanced-match/-/balanced-match-1.0.0.tgz#89b4d199ab2bee49de164ea02b89ce462d71b767"
   integrity sha1-ibTRmasr7kneFk6gK4nORi1xt2c=
 
-base-x@*, base-x@^3.0.2:
+base-x@*, base-x@3.0.7, base-x@^3.0.2:
   version "3.0.7"
   resolved "https://registry.yarnpkg.com/base-x/-/base-x-3.0.7.tgz#1c5a7fafe8f66b4114063e8da102799d4e7c408f"
   integrity sha512-zAKJGuQPihXW22fkrfOclUUZXM2g92z5GzlSMHxhO6r6Qj+Nm0ccaGNBzDZojzwOMkpjAv4J0fOv1U4go+a4iw==
@@ -452,6 +452,11 @@ base@^0.11.1:
     mixin-deep "^1.2.0"
     pascalcase "^0.1.1"
 
+big-integer@^1.6.48:
+  version "1.6.48"
+  resolved "https://registry.yarnpkg.com/big-integer/-/big-integer-1.6.48.tgz#8fd88bd1632cba4a1c8c3e3d7159f08bb95b4b9e"
+  integrity sha512-j51egjPa7/i+RdiRuJbPdJ2FIUYYPhvYLjzoYbcMMm62ooO6F94fETG4MTs46zPAF9Brs04OajboA/qTGuz78w==
+
 big.js@^5.2.2:
   version "5.2.2"
   resolved "https://registry.yarnpkg.com/big.js/-/big.js-5.2.2.tgz#65f0af382f578bcdc742bd9c281e9cb2d7768328"
@@ -482,6 +487,19 @@ bip32@2.0.4:
     typeforce "^1.11.5"
     wif "^2.0.6"
 
+bip32@2.0.5:
+  version "2.0.5"
+  resolved "https://registry.yarnpkg.com/bip32/-/bip32-2.0.5.tgz#e3808a9e97a880dbafd0f5f09ca4a1e14ee275d2"
+  integrity sha512-zVY4VvJV+b2fS0/dcap/5XLlpqtgwyN8oRkuGgAS1uLOeEp0Yo6Tw2yUTozTtlrMJO3G8n4g/KX/XGFHW6Pq3g==
+  dependencies:
+    "@types/node" "10.12.18"
+    bs58check "^2.1.1"
+    create-hash "^1.2.0"
+    create-hmac "^1.1.7"
+    tiny-secp256k1 "^1.1.3"
+    typeforce "^1.11.5"
+    wif "^2.0.6"
+
 bip39@^3.0.2:
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/bip39/-/bip39-3.0.2.tgz#2baf42ff3071fc9ddd5103de92e8f80d9257ee32"
@@ -506,6 +524,11 @@ bn.js@^4.0.0, bn.js@^4.1.0, bn.js@^4.1.1, bn.js@^4.11.3, bn.js@^4.11.8, bn.js@^4
   version "4.11.8"
   resolved "https://registry.yarnpkg.com/bn.js/-/bn.js-4.11.8.tgz#2cde09eb5ee341f484746bb0309b3253b1b1442f"
   integrity sha512-ItfYfPLkWHUjckQCk8xC+LwxgK8NYcXywGigJgSwOP8Y2iyWT4f2vsZnoOXTTbo+o5yXmIUJ4gn5538SO5S3gA==
+
+bn.js@^5.1.1:
+  version "5.1.1"
+  resolved "https://registry.yarnpkg.com/bn.js/-/bn.js-5.1.1.tgz#48efc4031a9c4041b9c99c6941d903463ab62eb5"
+  integrity sha512-IUTD/REb78Z2eodka1QZyyEk66pciRcP6Sroka0aI3tG/iwIdYLrBD62RsubR7vqdt3WyX8p4jxeatzmRSphtA==
 
 brace-expansion@^1.1.7:
   version "1.1.11"
@@ -1001,6 +1024,11 @@ decamelize@^1.1.1, decamelize@^1.2.0:
   resolved "https://registry.yarnpkg.com/decamelize/-/decamelize-1.2.0.tgz#f6534d15148269b20352e7bee26f501f9a191290"
   integrity sha1-9lNNFRSCabIDUue+4m9QH5oZEpA=
 
+decimal.js@^10.2.0:
+  version "10.2.0"
+  resolved "https://registry.yarnpkg.com/decimal.js/-/decimal.js-10.2.0.tgz#39466113a9e036111d02f82489b5fd6b0b5ed231"
+  integrity sha512-vDPw+rDgn3bZe1+F/pyEwb1oMG2XTlRVgAa6B4KccTEpYgF8w6eQllVbQcfIJnZyvzFtFpxnpGtx8dd7DJp/Rw==
+
 decimal.js@^5.0.8:
   version "5.0.8"
   resolved "https://registry.yarnpkg.com/decimal.js/-/decimal.js-5.0.8.tgz#b48c3fb7d73a2d4d4940e0b38f1cd21db5b367ce"
@@ -1460,17 +1488,22 @@ google-protobuf@3.11.1:
   resolved "https://registry.yarnpkg.com/google-protobuf/-/google-protobuf-3.11.1.tgz#c1319e5fc8579394758c8a41699f0a2e3e950c38"
   integrity sha512-1fdyssLSa7Dip+MDdluLl0uK+2rspgU1PrbdPJKt7hywqSl3+R27TkLYKuBn9dvOyr0VQ0cliQWlfMheW5WKqA==
 
+google-protobuf@3.11.2:
+  version "3.11.2"
+  resolved "https://registry.yarnpkg.com/google-protobuf/-/google-protobuf-3.11.2.tgz#43272974521a5cec35a21f62730cf517a5a8e38c"
+  integrity sha512-T4fin7lcYLUPj2ChUZ4DvfuuHtg3xi1621qeRZt2J7SvOQusOzq+sDT4vbotWTCjUXJoR36CA016LlhtPy80uQ==
+
 graceful-fs@^4.1.11, graceful-fs@^4.1.15, graceful-fs@^4.1.2:
   version "4.2.3"
   resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.2.3.tgz#4a12ff1b60376ef09862c2093edd908328be8423"
   integrity sha512-a30VEBm4PEdx1dRB7MFK7BejejvCvBronbLjht+sHuGYj8PHs7M/5Z+rt5lw551vZ7yfTCj4Vuyy3mSJytDWRQ==
 
-grpc-web@^1.0.7:
+grpc-web@1.0.7, grpc-web@^1.0.7:
   version "1.0.7"
   resolved "https://registry.yarnpkg.com/grpc-web/-/grpc-web-1.0.7.tgz#9e4fbcf63d3734515332ab59e42baa7d0d290015"
   integrity sha512-Fkbz1nyvvt6GC6ODcxh9Fen6LLB3OTCgGHzHwM2Eni44SUhzqPz1UQgFp9sfBEfInOhx3yBdwo9ZLjZAmJ+TtA==
 
-grpc@1.24.2:
+grpc@1.24.2, grpc@^1.24.2:
   version "1.24.2"
   resolved "https://registry.yarnpkg.com/grpc/-/grpc-1.24.2.tgz#76d047bfa7b05b607cbbe3abb99065dcefe0c099"
   integrity sha512-EG3WH6AWMVvAiV15d+lr+K77HJ/KV/3FvMpjKjulXHbTwgDZkhkcWbwhxFAoTdxTkQvy0WFcO3Nog50QBbHZWw==
@@ -2820,6 +2853,14 @@ ripple-address-codec@4.0.0:
     base-x "3.0.4"
     create-hash "^1.1.2"
 
+ripple-address-codec@4.1.0, ripple-address-codec@^4.0.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/ripple-address-codec/-/ripple-address-codec-4.1.0.tgz#7a119638527f1ccf1eb4aea3d4a8886bc9ccd5c5"
+  integrity sha512-C72gJpwvDagaOUiHyh67otqNqFduB4hjvJFiiPz/8I3FCiUYuvFLXeLhb29CEkoAEdoN9p7pPreLgoHUvwzt9w==
+  dependencies:
+    base-x "3.0.7"
+    create-hash "^1.1.2"
+
 ripple-address-codec@^2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/ripple-address-codec/-/ripple-address-codec-2.0.1.tgz#eddbe3a7960d2e02c5c1c74fb9a9fa0d2dfb6571"
@@ -2848,6 +2889,19 @@ ripple-binary-codec@0.2.4:
     inherits "^2.0.1"
     lodash "^4.17.15"
     ripple-address-codec "^3.0.4"
+
+ripple-binary-codec@0.2.6:
+  version "0.2.6"
+  resolved "https://registry.yarnpkg.com/ripple-binary-codec/-/ripple-binary-codec-0.2.6.tgz#a8c45c905c12d5dc6fa7e179c3584d56fb8bdb07"
+  integrity sha512-k0efyjpcde7p+rJ9PXW9tJSYsUDdlC9Z9xU7OPM7fJiHVKlR1E7nfu0jqw9vVXtTG3tujqKeEgtcb8yaa7rMXA==
+  dependencies:
+    babel-runtime "^6.6.1"
+    bn.js "^5.1.1"
+    create-hash "^1.1.2"
+    decimal.js "^10.2.0"
+    inherits "^2.0.1"
+    lodash "^4.17.15"
+    ripple-address-codec "^4.0.0"
 
 ripple-keypairs@^0.11.0:
   version "0.11.0"
@@ -3253,7 +3307,7 @@ timers-browserify@^2.0.4:
   dependencies:
     setimmediate "^1.0.4"
 
-tiny-secp256k1@^1.1.0:
+tiny-secp256k1@^1.1.0, tiny-secp256k1@^1.1.3:
   version "1.1.3"
   resolved "https://registry.yarnpkg.com/tiny-secp256k1/-/tiny-secp256k1-1.1.3.tgz#e93b1e1bf62e9bd1ad3ab24af27ff6127ce0e077"
   integrity sha512-ZpobrhOtHP98VYEN51IYQH1YcrbFpnxFhI6ceWa3OEbJn7eHvSd8YFjGPxbedGCy7PNYU1v/+BRsdvyr5uRd4g==
@@ -3563,25 +3617,34 @@ x-address-codec@^0.7.0:
   dependencies:
     base-x "^1.0.1"
 
-xpring-common-js@1.1.12:
-  version "1.1.12"
-  resolved "https://registry.yarnpkg.com/xpring-common-js/-/xpring-common-js-1.1.12.tgz#0b53ac17947f11abefb378cb06261b8265d0514a"
-  integrity sha512-4cRMD594yaI1JO2qIpGaTaNWhMNhcir2wV1Xz0PBNmAGBhRknkNg50SaFdguJvvzmUOyzjrVTnfOVpkoNxAwlQ==
+xhr2@0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/xhr2/-/xhr2-0.2.0.tgz#eddeff782f3b7551061b8d75645085269396e521"
+  integrity sha512-BDtiD0i2iKPK/S8OAZfpk6tyzEDnKKSjxWHcMBVmh+LuqJ8A32qXTyOx+TVOg2dKvq6zGBq2sgKPkEeRs1qTRA==
+
+xpring-common-js@^3.0.2:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/xpring-common-js/-/xpring-common-js-3.0.2.tgz#02d27ce72dce95d9d4cca0e0dfc4a173048f5565"
+  integrity sha512-h0Dv+z65YfyXFyBTUySIBYWQI56/MrpdpXj+fQAO0YDy/+33CbBedJBb8uslOUKZHjmyb8W4WSI9v6uCb4rAQA==
   dependencies:
-    bip32 "2.0.4"
+    bip32 "2.0.5"
     bip39 "^3.0.2"
-    google-protobuf "3.11.1"
-    grpc "1.24.2"
-    ripple-address-codec "4.0.0"
-    ripple-binary-codec "0.2.4"
+    google-protobuf "3.11.2"
+    grpc-web "1.0.7"
+    ripple-address-codec "4.1.0"
+    ripple-binary-codec "0.2.6"
     ripple-keypairs "^0.11.0"
 
-xpring-js@1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/xpring-js/-/xpring-js-1.2.0.tgz#2b61556a4c567213c439b79afffe7c0fe001e6d8"
-  integrity sha512-iYxFMOdlYiICDn/4Ab6hVwX4GVFjv9E2n45DXZPHa1wAJy6mc1+W+kSU7dWuVLZWBLyv38K6azkxrZV8n0GdKw==
+xpring-js@1.3.0:
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/xpring-js/-/xpring-js-1.3.0.tgz#7170bbc602c6b62695358b3fa8cfc705198a56fc"
+  integrity sha512-PFTsh8x/d0ek2g+nAHvyNzTa4nRwwjsoCjV9Fc1i25AgJnhjrvnkBvWR1C1s1CLljR85UkmdDXoIeq75Lwa7ZQ==
   dependencies:
-    xpring-common-js "1.1.12"
+    big-integer "^1.6.48"
+    grpc "^1.24.2"
+    grpc-web "1.0.7"
+    xhr2 "0.2.0"
+    xpring-common-js "^3.0.2"
 
 xtend@^4.0.0, xtend@~4.0.1:
   version "4.0.2"
