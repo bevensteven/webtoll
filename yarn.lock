@@ -17,10 +17,10 @@
     "@types/long" "*"
     "@types/node" "*"
 
-"@types/chrome@0.0.91":
-  version "0.0.91"
-  resolved "https://registry.yarnpkg.com/@types/chrome/-/chrome-0.0.91.tgz#4b3996f55f344057e6a677c8366aa98080c6e380"
-  integrity sha512-vNvo9lJkp1AvViWrUwe1bxhoMwr5dRZWlgr1DTuaNkz97LsG56lDX1sceWeZir2gRACJ5vdHtoRdVAvm8C75Ug==
+"@types/chrome@0.0.98":
+  version "0.0.98"
+  resolved "https://registry.yarnpkg.com/@types/chrome/-/chrome-0.0.98.tgz#1d9aef8b27d0925c099f994a7a923ea6534396cb"
+  integrity sha512-hEYcMXB8at3bDPdk7NmfleRvpw0gxUGMwHZxaWUYs3/VWFLkg9nQPTsYJauZgKHdAoW8RDBRrk4fWDvXjP3OKg==
   dependencies:
     "@types/filesystem" "*"
 
