@@ -28,6 +28,6 @@
     "chrome-extension-async": "3.4.1",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
-    "xpring-js": "1.2.0"
+    "xpring-js": "5.3.0"
   }
 }
